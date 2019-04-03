@@ -1,0 +1,28 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "dating app homework assignment using express",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vguercio10/Friend-Finder"
+  },
+  "keywords": [
+    "friend",
+    "finder",
+    "express",
+    "path",
+    "api",
+    "heroku"
+  ],
+  "author": "Vanessa Guercio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
