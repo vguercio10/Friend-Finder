@@ -12,6 +12,7 @@ module.exports = function (app) {
         // console.log (req);
         var userInput = req.body;
 // Here is where you will add your logic for comparison of friends
+
         
 
 // faseResponse for testing purposes
