@@ -12,14 +12,30 @@ module.exports = function (app) {
         // console.log (req);
         var userInput = req.body;
 // Here is where you will add your logic for comparison of friends
-
-        
-
-// faseResponse for testing purposes
-    var fakeResponse = {
-            name: "John Doe",
-            photo: "lsdkfk"
+        var totalDifference = 999;
+        var match;
+        for(var i = 0; i <friendsData.length; i++ ) {
+            var newTotalDiff = 0;
+            
+            for (var j = 0; j < friendsData[i].scores.length; j++) {
+                newTotalDiff += Math.abs(userInput.scores[j] - friendsData[i].scores[j]);
+            }
+            if (newTotalDiff < totalDifference) {
+                match = friendsData[i];
+                totalDifference = newTotalDiff
+            }
         }
-        res.json(fakeResponse);
-    })
+        friendsData.push(userInput);
+        res.json(match);
+    });
+
 }
+
+
+// // fakeResponse for testing purposes
+//     var fakeResponse = {
+//             name: "John Doe",
+//             photo: "lsdkfk"
+//         }
+//         res.json(fakeResponse);
+//     })
