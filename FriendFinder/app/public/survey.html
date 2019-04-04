@@ -237,7 +237,7 @@
                     $("#Q10").val().trim()
                 ]
             };
-// This post request is sending information to backend for comparison of friends
+// This AJAX post request is sending information to backend for comparison of friends
             $.post("/api/friends", userData, function(data){
                 console.log(data);
             })
