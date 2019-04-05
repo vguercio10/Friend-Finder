@@ -6,7 +6,7 @@
 ## Live Link
 https://safe-tor-10670.herokuapp.com/
 
-#### Technologies used:
+## Technologies used:
 * HTML
 * Bootstrap
 * Font Awesome
@@ -16,3 +16,8 @@ https://safe-tor-10670.herokuapp.com/
 * Express.js
 * Heroku
 
+## Requirements for the app
+* Modular programming by separting data, routing, and server logic.
+* NPM install express and path packages in server.js file.
+* Get and Post routes for serving HTML and API calls.
+* Friends.js folder for data.
