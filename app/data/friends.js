@@ -1,7 +1,7 @@
 // This is where my applications data is stored in the form of an object within an array
 var friendsArray = [{
-    "name":"Ahmed",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Dwyane",
+    "photo":"http://www.pngall.com/wp-content/uploads/2018/05/Dwayne-Johnson.png",
     "scores":[
         5,
         1,
@@ -16,8 +16,8 @@ var friendsArray = [{
       ]
   },
   {
-    "name":"Vanessa",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name":"Zac",
+    "photo":"https://peopledotcom.files.wordpress.com/2016/06/zac-efron-tout.jpg",
     "scores":[
         3,
         2,
@@ -30,6 +30,73 @@ var friendsArray = [{
         5,
         2
       ]
+  },
+
+  {
+    "name":"Michael",
+    "photo":"https://lovelyti.com/wp-content/uploads/2018/10/Screenshot_2018-10-19-Tennis-Naomi-Osaka-Lands-Date-with-Michael-B-Jordan-Thanks-to-Ellen-DeGeneres-Twitter-Meddling-473x336.png",
+    "scores":[
+        1,
+        4,
+        3,
+        1,
+        2,
+        3,
+        5,
+        1,
+        1,
+        1
+      ]
+  },
+
+  {
+    "name":"Catriona",
+    "photo":"https://c.ndtvimg.com/2018-12/ft9kt0lo_catriona-elisa-gray_625x300_17_December_18.jpg",
+    "scores":[
+        5,
+        4,
+        3,
+        2,
+        1,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+  },
+  {
+    "name":"Beyonce",
+    "photo":"https://i.dlpng.com/static/png/483048_thumb.png",
+    "scores":[
+        4,
+        1,
+        2,
+        2,
+        3,
+        4,
+        5,
+        3,
+        3,
+        1
+      ]
+  },
+  {
+    "name":"Sophie",
+    "photo":"https://i.dlpng.com/static/png/455592_thumb.png",
+    "scores":[
+        4,
+        1,
+        2,
+        2,
+        3,
+        4,
+        5,
+        3,
+        3,
+        1
+      ]
   }];
 // This code is exporting my array of object 
   module.exports = friendsArray;
+  
