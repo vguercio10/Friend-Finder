@@ -19,7 +19,7 @@
 
 <body>
 
-    <!-- Beginning of survey -->
+    <!-- Beginning of survey questions -->
     <div class="container">
         <h2>Survey Questions</h2>
         <h3>About You</h3>
@@ -196,7 +196,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
-        
+
 
         <!--Submit button-->
         <button type="button" class="btn btn-secondary btn-lg btn-block" id="submitbutton"><i
@@ -261,17 +261,11 @@
                     // console.log(data);
                     // Grab input from match to put into modal
                     if (data) {
-                        alert("yay");
+                        // alert("yay");
                         $('#myModal').modal('toggle');
                         $("#match-name").text(data.name);
                         $("#match-img").attr("src", data.photo);
                     }
-
-
-
-
-
-
                 })
             })
         </script>

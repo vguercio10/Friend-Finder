@@ -11,12 +11,12 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
         // console.log (req);
         var userInput = req.body;
-// Here is where you will add your logic for comparison of friends
+        // Here is the logic for comparison of friends
         var totalDifference = 999;
         var match;
-        for(var i = 0; i <friendsData.length; i++ ) {
+        for (var i = 0; i < friendsData.length; i++) {
             var newTotalDiff = 0;
-            
+
             for (var j = 0; j < friendsData[i].scores.length; j++) {
                 newTotalDiff += Math.abs(userInput.scores[j] - friendsData[i].scores[j]);
             }
@@ -25,6 +25,7 @@ module.exports = function (app) {
                 totalDifference = newTotalDiff
             }
         }
+
         friendsData.push(userInput);
         res.json(match);
     });
